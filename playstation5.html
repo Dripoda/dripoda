@@ -43,7 +43,8 @@
 
 
 <style>
-.row0{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 0% 5% 0%; }
+.row0{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 0% 5% 0%;  }
+.sticky { background-color:blue;  width: 100%; position:fixed; top:0;  z-index:6; } 
 
 .row0 .col1{background-color:transparent;  width:33.33%; height:auto; display:flex align-items:center; justify-content:center; text-align:center;  margin:0% 0% 0% 0%;    }
 .row0 .col1 .posopen{ background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }  .row0 .col1 .posopen i{font-size:30px; cursor:pointer; }
@@ -60,8 +61,8 @@
 @media only screen and (max-width:360px) { .row0 .col1{width:20%}  .row0 .col2{width:60%}   .row0 .col3{width:20%}}
 </style>
 
-<div class="row0">
 
+<div class="row0" id="myHeader"> 
 
 <div class="col1">
  <div class="posopen">  <span class="iconeopen"><i class="fas fa-bars"></i> </span>   </div>
@@ -75,6 +76,9 @@
  <div class="posshopcart">   <span class="iconeshopcart"><i class="fas fa-shopping-cart"></i></span>   </div>
 </div>
 </div>
+
+ <script> window.onscroll = function() {myFunction()};  var header = document.getElementById("myHeader");  var sticky = header.offsetTop;  function myFunction() {   if (window.pageYOffset > sticky) {     header.classList.add("sticky");    } else {     header.classList.remove("sticky");    }  }  </script>
+
 
 
 
@@ -183,7 +187,7 @@ $(".iconminus").click(function(){    $(".iconminus").css({"display": "none"});  
 
 
 <style>
-.row1{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;}
+.row1{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }
 
 .row1 .col1{background-color:transparent; width:15%; height:400px; display:flex; align-items:center; justify-content:flex-end; text-align:center; }
 
