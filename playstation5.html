@@ -46,7 +46,7 @@
 .row0{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 0% 5% 0%; }
 
 .row0 .col1{background-color:transparent;  width:33.33%; height:auto; display:flex align-items:center; justify-content:center; text-align:center;  margin:0% 0% 0% 0%;    }
-.row0 .col1 .posbars{ background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }  .row0 .col1 .posbars i{font-size:30px; cursor:pointer; }
+.row0 .col1 .posopen{ background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }  .row0 .col1 .posopen i{font-size:30px; cursor:pointer; }
 
 .row0 .col2{background-color:transparent;  width:33.33%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 0% 0% 0%;    }
 .row0 .col2 .posimg1{ background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }  .row0 .col2 .posimg1 .img1{max-width:100%; height:50px; cursor:pointer; }
@@ -64,7 +64,7 @@
 
 
 <div class="col1">
- <div class="posbars">  <span class="iconebars"><i class="fas fa-bars"></i> </span>   </div>
+ <div class="posopen">  <span class="iconeopen"><i class="fas fa-bars"></i> </span>   </div>
 </div>
 
 <div class="col2">
@@ -139,14 +139,16 @@
 
 
 <script>
+$(".iconeopen").click(function(){    $(".row0a").css({"visibility": "visible" , "opacity": "1" });   $(".row0b").css({"left": "0"});    });
+$(".iconeclose").click(function(){   $(".row0a").css({"visibility": "hidden" , "opacity": "0"});   $(".row0b").css({"left": "-250px" });    });
+
+
 $(".iconplus").click(function(){      $(".iconplus").css({"display": "none"});     $(".iconminus").css({"display": "block"});    });
 $(".iconminus").click(function(){      $(".iconminus").css({"display": "none"});     $(".iconplus").css({"display": "block"});      });
 $(".iconplus").click(function(){      $(".ulsublist").slideDown(1000);          });
 $(".iconminus").click(function(){      $(".ulsublist").slideUp(1000);         });
 
 
-$(".iconebars").click(function(){    $(".row0a").css({"visibility": "visible" , "opacity": "1" });   $(".row0b").css({"left": "0"});    });
-$(".iconeclose").click(function(){   $(".row0a").css({"visibility": "hidden" , "opacity": "0"});   $(".row0b").css({"left": "-250px" });    });
 
 </script>
 
