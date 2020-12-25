@@ -141,15 +141,8 @@
 <script>
 $(".iconeopen").click(function(){    $(".row0a").css({"visibility": "visible" , "opacity": "1" });   $(".row0b").css({"left": "0"});    });
 $(".iconeclose").click(function(){   $(".row0a").css({"visibility": "hidden" , "opacity": "0"});   $(".row0b").css({"left": "-250px" });    });
-
-
-$(".iconplus").click(function(){      $(".iconplus").css({"display": "none"});     $(".iconminus").css({"display": "block"});    });
-$(".iconminus").click(function(){      $(".iconminus").css({"display": "none"});     $(".iconplus").css({"display": "block"});      });
-$(".iconplus").click(function(){      $(".ulsublist").slideDown(1000);          });
-$(".iconminus").click(function(){      $(".ulsublist").slideUp(1000);         });
-
-
-
+$(".iconplus").click(function(){      $(".iconplus").css({"display": "none"});     $(".iconminus").css({"display": "block"});    $(".ulsublist").slideDown(1000);     });
+$(".iconminus").click(function(){    $(".iconminus").css({"display": "none"});     $(".iconplus").css({"display": "block"});     $(".ulsublist").slideUp(1000);       });
 </script>
 
 
