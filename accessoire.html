@@ -274,19 +274,14 @@ var x = setInterval(function() {
 
 <style>
 .row5{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  margin:5% 0% 0% 0%; }
-.row5 .col1 {background-color:black; width:100%; height:60px; display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 0% 0% 0%;}
-.row5 .col1 .postext1{background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 0% 0% 0%;   }  .row5 .col1 .postext1 .text1{color:white; font:800 30px "cairo",sans-serif;}
+.row5 .col{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 2% 0% 2%; }
+.row5 .col .col1 {background-color:black; width:100%; height:60px; display:flex; align-items:center; justify-content:center; text-align:center;  }   .row5 .col .col1 .postext1{background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 0% 0% 0%;   }    .row5 .col .col1 .postext1 .text1{color:white; font:800 30px "cairo",sans-serif;}
 
-@media only screen and (max-width:360px)  { 
-.row5{}
-.row5 .col1 }
-.row5 .col1 .postext1{ }  .row5 .col1 .postext1 .text1{ font:800 25px "cairo",sans-serif;}
-
-}
+@media only screen and (max-width:360px)  {  .row5 .col .col1 .postext1 .text1{font:800 15px "cairo",sans-serif;} }
 </style>
 <div class="row5">
-<div class="col1">
-<div class="postext1"><div class="text1"> CopyRight © 2020 - HmizatShop </div></div>
+<div class="col">
+  <div class="col1"> <div class="postext1"><div class="text1">  HmizatShop © 2021 -   كل الحقوق محفوظة لموقع </div></div>  </div>
 </div>
 </div>
 
