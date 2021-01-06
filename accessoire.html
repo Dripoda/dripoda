@@ -79,6 +79,8 @@
 
 
 
+
+
 <style>
 .row2{ direction: rtl;  background-color:transparent;  width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  }
 .row2 .col{background-color:transparent;  width:100%; height:auto; display:flex; align-items:flex-start; justify-content:center; text-align:center;  margin:0% 5% 0% 5%;}
@@ -95,6 +97,8 @@
 .row2 .col .col2{direction: rtl;  background-color:transparent;  width:50%; height:auto; display:grid; align-items:center; justify-content:center; text-align:center;  }  
 .row2 .col .col2 .postext1{background-color:#8fe046; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;  }   
 .row2 .col .col2 .postext1 .text1{color:black; font:800 27px 'Cairo', sans-serif;}
+.row2 .col .col2 .posstar{background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%; }     
+.row2 .col .col2 .posstar .star1{color:#ffce07; font-size:20px; }   
 .row2 .col .col2 .postext2{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%; }   
 .row2 .col .col2 .postext2 .text2a{color:black; font:800 40px 'Cairo', sans-serif;  text-decoration: line-through; margin:0 1%; }     
 .row2 .col .col2 .postext2 .text2b{color:blue; font:800 40px 'Cairo', sans-serif; margin:0 1%; }    
@@ -168,6 +172,8 @@
 .row2 .col .col2{width:100%;} 
 .row2 .col .col2 .postext1{background-color:#8fe046; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%; }   
 .row2 .col .col2 .postext1 .text1{color:black; font:800 25px 'Cairo', sans-serif;}
+.row2 .col .col2 .posstar{background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%; }     
+.row2 .col .col2 .posstar .star1{color:#ffce07; font-size:20px; } 
 .row2 .col .col2 .postext2{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;  }   
 .row2 .col .col2 .postext2 .text2a{color:black; font:800 30px 'Cairo', sans-serif;  text-decoration: line-through; margin:0% 1% 0% 1%; }     
 .row2 .col .col2 .postext2 .text2b{color:blue; font:800 30px 'Cairo', sans-serif; margin:0% 1% 0% 1%; }    
@@ -217,30 +223,29 @@
 </div>
 
 
+
 <div class="col2">
  <div class="postext1"><div class="text1">مجموعة اكسيسوارات بجودة عالية</div></div> 
  <div class="postext2">    <div class="text2a"> 499dh</div>  <div class="text2b"> 250dh</div> </div>
+ <div class="posstar"> <i class="star1 fas fa-star"></i>  <i class="star1 fas fa-star"></i> <i class="star1 fas fa-star"></i>  <i class="star1 fas fa-star"></i> <i class="star1 fas fa-star"></i> </div>
  <div class="postext3"><div class="text3 animatcolor">العرض محدود </div></div> 
  <div class="poscountdown" id="countdown"> <ul>       <li><span class="span1" id="days" ></span> <span class="span2" >يوم</span></li>        <li><span class="span1" id="hours" ></span> <span class="span2" >ساعة</span></li>      <li><span class="span1" id="minutes" ></span> <span class="span2" >دقيقة</span></li>       <li><span class="span1" id="seconds" ></span> <span class="span2" >تانية</span></li>      </ul>      </div> 
  <div class="posform1">
    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSciyqBypiid3dH9-aeRtaDgcBjh1hoMKKWt3W8tM_vR3nBPPw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true"  >     <script type="text/javascript">var submitted=false;</script>      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     onload="if(submitted) {window.location='file:///E:/MehdiOtm/!!!!!Website/OK/thanks.html';}"></iframe> 
    <div class="postext1"><div class="text1">إملئ الإستمارة لتأكيد الطلب </div></div>
-   <div class="posinput"><input  class="inputtext"            name="entry.461361780"      placeholder="أدخل الإسم الكامل"      type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل الإسم الكامل ')"  oninput="setCustomValidity('')" dir="rtl"/></div>
+   <div class="posinput"><input  class="inputtext"            name="entry.461361780"       placeholder="أدخل الإسم الكامل"      type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل الإسم الكامل ')"  oninput="setCustomValidity('')" dir="rtl"/></div>
    <div class="posinput"><input  class="inputtext"            name="entry.407072722"      placeholder="أدخل رقم هاتفك"        type="tel"       required="required"   oninvalid="this.setCustomValidity('المرجو أدخل رقم هاتفك')"     oninput="setCustomValidity('')" dir="rtl"/></div>
    <div class="posinput"><input  class="inputtext"            name="entry.314597563"      placeholder="أدخل عنوانك"           type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل عنوانك')"        oninput="setCustomValidity('')" dir="rtl"/></div>
-   <div class="posinput"><input  class="inputtext"            name="entry.1618247309"     placeholder="أدخل مدينتك"           type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل مدينتك')"        oninput="setCustomValidity('')" dir="rtl"/></div>
-   <div class="posinput" >  <i  class="fas fa-plus" id="plus" onclick="plus()" ></i>  <input  class="inputcount" id="count"           name="entry.1192269091"    value="1"  type="text" readonly="readonly"    required="required"   />             <i class="fas fa-minus" id="moins" onclick="minus()" ></i>      </div>
+   <div class="posinput"><input  class="inputtext"            name="entry.1618247309"       placeholder="أدخل مدينتك"           type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل مدينتك')"        oninput="setCustomValidity('')" dir="rtl"/></div>
+   <div class="posinput">  <i  class="fas fa-plus" id="plus" onclick="plus()" ></i>  <input  class="inputcount" id="count"           name="entry.1192269091"    value="1"  type="text" readonly="readonly"    required="required"   />             <i class="fas fa-minus" id="moins" onclick="minus()" ></i>      </div>
    <div class="posinput"><input  class="inputbtn animatbn1"   name="submit"                value=" إضغط هنا لتأكيد طلبك  "     type="submit"    required="required" /> </div>
    </form>
  </div>
  <div class="posimg1" ><img  class="img1" src="img/tawsilmajani2.png" /> </div> 
 </div>
 
-
-
 </div>
 </div>
-<br/>
 
 
 
@@ -275,6 +280,7 @@ var x = setInterval(function() {
  function minus(){  if (count > 1) {      count--;  document.getElementById("count").value = count;}   };
 
 </script>
+
 
 
 
