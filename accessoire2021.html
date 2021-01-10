@@ -124,13 +124,12 @@
 <style>
 .row2{ direction: rtl;  background-color:transparent;  width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  }
 .row2 .col{background-color:transparent;  width:100%; height:auto; display:flex; align-items:flex-start; justify-content:center; text-align:center;  margin:0% 5% 0% 5%;}
-
-.row2 .col .col2{direction: rtl;  background-color:RED;  width:100%; height:auto; display:grid; align-items:center; justify-content:center; text-align:center;   }  
+   .row2 .col .col2{direction: rtl;  background-color:RED;  width:100%; height:auto;  padding:5px; display:grid; align-items:center; justify-content:center; text-align:center;   }  
    .row2 .col .col2 .postext1{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  }        .row2 .col .col2 .postext1 .text1{color:white; font:800 27px 'Cairo', sans-serif;}
    .row2 .col .col2 .postext2{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  }        .row2 .col .col2 .postext2 .text2a{color:yellow; font:800 40px 'Cairo', sans-serif; margin:0 1%; }          
    .row2 .col .col2 .posimg1{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;}    .row2 .col .col2 .posimg1 .img1{max-width:100%; height:100px;} 
    .row2 .col .col2 .posstar{background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center; }         .row2 .col .col2 .posstar .star1{color:yellow; font-size:20px; }   
-   .row2 .col .col2 .postext3{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }         .row2 .col .col2 .postext3 .text3{color:yellow; font:800 30px "cairo",sans-serif;      filter:drop-shadow(0 0 10px blue) ;  text-shadow: 2px 2px blue;}     .animatcolor { animation-name: name;     animation-duration: 0.5s;         animation-direction: alternate;      animation-iteration-count: infinite;        }       @keyframes name {         from{color:yellow; }  to{color:red;   }   }  
+   .row2 .col .col2 .postext3{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }         .row2 .col .col2 .postext3 .text3{color:yellow; font:800 35px "cairo",sans-serif;      filter:drop-shadow(0 0 10px yellow) ;  text-shadow: 2px 2px blue;}     .animatcolor { animation-name: name;     animation-duration: 0.5s;         animation-direction: alternate;      animation-iteration-count: infinite;        }       @keyframes name {         from{color:yellow; }  to{color:red;   }   }  
    .row2 .col .col2 .poscountdown {background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center; }   .row2 .col .col2 .poscountdown ul {padding:0;  display:flex; align-items:center; justify-content:center; text-align:center; }   .row2 .col .col2 .poscountdown ul li .span1 { color:white;   font:800 30px sans-serif;    display:block;  }      .row2 .col .col2 .poscountdown ul li .span2 {padding: 0em 0.4em 0em 0.4em;  color:white;   font:800 25px sans-serif;    display:block;  }  
    .row2 .col .col2 .posform1{background-color:yellow; width:auto; height:auto;  padding:10px; border:solid 3px #cf0628; border-radius:10px 10px;   display:grid; align-items:center; justify-content:center; text-align:center;   }             
    .row2 .col .col2 .posform1 .posinput1 {background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:2% 2% 2% 2%;   }            .row2 .col .col2 .posform1 .posinput1  .text1{ color:red; font:800 25px sons-serif;}   
@@ -141,23 +140,18 @@
  
 
 
-@media only screen and (max-width:1000px) { }
-
-
-@media only screen and (max-width:600px)  { }
-
 
 @media only screen and (max-width:360px)  {
 .row2{ direction: rtl;  background-color:transparent;  width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  }
 .row2 .col{background-color:transparent;  width:100%; height:auto; display:flex; align-items:flex-start; justify-content:center; text-align:center;  margin:0% 2% 0% 2%;}
-  .row2 .col .col2{direction: rtl;  background-color:RED;  width:100%; height:auto; display:grid; align-items:center; justify-content:center; text-align:center;   }  
-  .row2 .col .col2 .postext1{background-color:transparent;width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  margin:0% 5% 0% 5%; }        .row2 .col .col2 .postext1 .text1{color:white; font:800 28px 'Cairo', sans-serif;}
-  .row2 .col .col2 .postext2{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;  }       .row2 .col .col2 .postext2 .text2a{color:yellow; font:800 30px 'Cairo', sans-serif; margin:0% 1% 0% 1%; }    
-  .row2 .col .col2 .posimg1{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;}    .row2 .col .col2 .posimg1 .img1{max-width:100%; height:100px;} 
-  .row2 .col .col2 .posstar{background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%; }        .row2 .col .col2 .posstar .star1{color:#ffce07; font-size:20px; } 
-  .row2 .col .col2 .postext3{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;}         .row2 .col .col2 .postext3 .text3{color:yellow; font:800 30px "cairo",sans-serif;      filter:drop-shadow(0 0 10px blue) ;  text-shadow: 2px 2px blue;}     .animatcolor { animation-name: name;     animation-duration: 0.5s;         animation-direction: alternate;      animation-iteration-count: infinite;        }       @keyframes name {         from{color:yellow; }  to{color:red;   }   }  
-  .row2 .col .col2 .poscountdown {background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;}   .row2 .col .col2 .poscountdown ul {padding:0;  display:flex; align-items:center; justify-content:center; text-align:center; }  .row2 .col .col2 .poscountdown ul li .span1 { color:white;   font:800 30px sans-serif;    display:block;  }     .row2 .col .col2 .poscountdown ul li .span2 {padding: 0em 0.4em 0em 0.4em;  color:white;   font:800 25px sans-serif;    display:block;  }  
-  .row2 .col .col2 .posform1{background-color:yellow; width:auto; height:auto;   border:solid 3px #cf0628; border-radius:10px 10px;   display:grid; align-items:center; justify-content:center; text-align:center;  margin:0% 5% 0% 5%; }             
+  .row2 .col .col2{direction: rtl;  background-color:RED;  width:100%; height:auto;  padding:5px; display:grid; align-items:center; justify-content:center; text-align:center;   }  
+  .row2 .col .col2 .postext1{background-color:transparent;width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  }        .row2 .col .col2 .postext1 .text1{color:white; font:800 28px 'Cairo', sans-serif;}
+  .row2 .col .col2 .postext2{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;  }       .row2 .col .col2 .postext2 .text2a{color:yellow; font:800 30px 'Cairo', sans-serif; margin:0% 1% 0% 1%; }    
+  .row2 .col .col2 .posimg1{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }    .row2 .col .col2 .posimg1 .img1{max-width:100%; height:100px;} 
+  .row2 .col .col2 .posstar{background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center;  }        .row2 .col .col2 .posstar .star1{color:#ffce07; font-size:20px; } 
+  .row2 .col .col2 .postext3{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; }         .row2 .col .col2 .postext3 .text3{color:yellow; font:800 30px "cairo",sans-serif;      filter:drop-shadow(0 0 10px blue) ;  text-shadow: 2px 2px yellow;}     .animatcolor { animation-name: name;     animation-duration: 0.5s;         animation-direction: alternate;      animation-iteration-count: infinite;        }       @keyframes name {         from{color:yellow; }  to{color:red;   }   }  
+  .row2 .col .col2 .poscountdown {background-color:transparent; width:auto; height:auto;  display:flex; align-items:center; justify-content:center; text-align:center; }   .row2 .col .col2 .poscountdown ul {padding:0;  display:flex; align-items:center; justify-content:center; text-align:center; }  .row2 .col .col2 .poscountdown ul li .span1 { color:white;   font:800 30px sans-serif;    display:block;  }     .row2 .col .col2 .poscountdown ul li .span2 {padding: 0em 0.4em 0em 0.4em;  color:white;   font:800 25px sans-serif;    display:block;  }  
+  .row2 .col .col2 .posform1{background-color:yellow; width:auto; height:auto; padding:10px;  border:solid 3px #cf0628; border-radius:10px 10px;   display:grid; align-items:center; justify-content:center; text-align:center;   }             
   .row2 .col .col2 .posform1 .posinput1 {background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:2% 2% 2% 2%;   }            .row2 .col .col2 .posform1 .posinput1 .text1{ color:red; font:800 25px sons-serif;}   
   .row2 .col .col2 .posform1 .posinput2 {background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:2% 2% 2% 2%;   }            .row2 .col .col2 .posform1 .posinput2 .inputtext{background-color:white;      width:300px; height:40px;  border:solid 2px #cccccc; border-radius:15px; box-shadow: 0 0 5px #cccccc;  color:black; font:400 20px black; text-indent: 9px;   }             .row2 .col .col2 .posform1 .posinput2 .inputtext:focus{outline: none !important;  border:solid 2px #0000ff5e; box-shadow: 0 0 2px #719ECE; }             .row2 .col .col2 .posform1 .posinput2 .inputtext::placeholder {color:#cdcdcdc9;} 
   .row2 .col .col2 .posform1 .posinput3 {background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:2% 2% 2% 2%;   }            .row2 .col .col2 .posform1 .posinput3 .text1{ color:blue; font:800 25px sons-serif;}      .row2 .col .col2 .posform1 .posinput3 {background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:2% 2% 2% 2%;   }            .row2 .col .col2 .posform1 .posinput3 i{background-color:transparent; padding:5px;  border:solid 1px black; cursor:pointer;   display:inline-block; position:relative;  margin:0em 0.1em 0em 0.1em; }  .row2 .col .col2 .posform1 .posinput3 .inputcount{background-color:transparent; width:40px; height:18px; padding:5px; border:solid 2px black;  color:blue; font:800 20px "cairo",sans-serif;  cursor:pointer;  display:flex; align-items:center; justify-content:center; text-align:center;}
@@ -171,7 +165,7 @@
 <div class="row2">
 <div class="col">
 
-<div class="col2"><br/>
+<div class="col2">
  <div class="postext1"><div class="text1">حصريا اخر صيحات موضة الاكسيسوارات لسنة 2021</div></div> 
  <div class="postext2">     <div class="text2a"> 250 درهم فقط</div>    </div>
  <div class="posimg1" ><img  class="img1" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/tawsilmajani2.png" /> </div> 
@@ -183,9 +177,9 @@
    <div class="posinput2"><input  class="inputtext"            name="entry.133739739"      placeholder="أدخل الإسم الكامل"      type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل الإسم الكامل ')"  oninput="setCustomValidity('')" dir="rtl"/></div>      <div class="posinput2"><input  class="inputtext"            name="entry.427166005"      placeholder="أدخل رقم هاتفك"        type="tel"       required="required"   oninvalid="this.setCustomValidity('المرجو أدخل رقم هاتفك')"     oninput="setCustomValidity('')" dir="rtl"/></div>       <div class="posinput2"><input  class="inputtext"            name="entry.2125671710"      placeholder="أدخل عنوانك"           type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل عنوانك')"        oninput="setCustomValidity('')" dir="rtl"/></div>       <div class="posinput2"><input  class="inputtext"            name="entry.699102807"       placeholder="أدخل مدينتك"           type="text"      required="required"   oninvalid="this.setCustomValidity('المرجو أدخل مدينتك')"        oninput="setCustomValidity('')" dir="rtl"/></div>
    <div class="posinput3"><div class="text1"> إختر الكمية </div> </div>         <div class="posinput3"><i class="fas fa-plus" id="plus" onclick="plus()" ></i>  <input  class="inputcount" id="count"           name="entry.612936383"    value="1"  type="text" readonly="readonly"    required="required"   />             <i class="fas fa-minus" id="moins" onclick="minus()" ></i>      </div>
    <div class="posinput4"><div class="text1">إختر اللون   </div> </div>         <div class="posinput4">      <label class="posimg"> <input class="radio" type="radio" name="entry.1025699696" value="img1" checked>  <img class="img1 img1xx" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/iconaccesoira1.jpg"/> </label>              <label class="posimg"> <input class="radio" type="radio" name="entry.1025699696" value="img2">          <img class="img1 img1xx" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/iconaccesoira2.jpg"/>  </label>             <label class="posimg"> <input class="radio" type="radio" name="entry.1025699696" value="img3">          <img class="img1 img1xx" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/iconaccesoira3.jpg"/>  </label>              <label class="posimg"> <input class="radio" type="radio" name="entry.1025699696" value="img4">          <img class="img1 img1xx" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/iconaccesoira4.jpg"/>  </label>           </div>                      <div class="posinput4">         <label class="posimg"> <input class="radio" type="radio" name="entry.1025699696" value="img5">  <img class="img1 img1xx" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/iconaccesoira5.jpg"/>  </label>                  <label class="posimg"> <input class="radio" type="radio" name="entry.1025699696" value="img6">  <img class="img1 img1xx" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/iconaccesoira6.jpg"/>  </label>               <label class="posimg"> <input class="radio" type="radio" name="entry.1025699696" value="img7">  <img class="img1 img1xx" src="https://raw.githubusercontent.com/Dripoda/dripoda.github.io/master/img/accessoire1/iconaccesoira7.jpg"/>  </label>                    </div>
-   <div class="posinput5"><input  onClick="fbq( 'track', 'Purchase', {currency: "DH", value: 250.00} );"  class="inputbtn animatbn1"   name="submit"      value=" إضغط هنا لتأكيد طلبك  "     type="submit"    required="required" /> </div>
+   <div class="posinput5"><input  onClick="fbq( 'track', 'Purchase' );"  class="inputbtn animatbn1"   name="submit"      value=" إضغط هنا لتأكيد طلبك  "     type="submit"    required="required" /> </div>
    </form> 
- </div><br/>
+ </div>
 </div>
 
 </div>
@@ -235,6 +229,16 @@ function minus(){  if (count > 1) {      count--;  document.getElementById("coun
 .row3apostext{display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 2% 0% 2%;}
 .row3atext{color:blue; font:800 50px 'cairo',sans-serif;}
 
+@media only screen and (max-width:600px)  {
+.row3apostext{display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 1% 0% 1%;}
+.row3atext{color:blue; font:800 29px 'cairo',sans-serif;}
+ }
+ 
+@media only screen and (max-width:600px)  {
+.row3apostext{display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 1% 0% 1%;}
+.row3atext{color:blue; font:800 27px 'cairo',sans-serif;}
+ }
+ 
 @media only screen and (max-width:360px)  {
 .row3apostext{display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 1% 0% 1%;}
 .row3atext{color:blue; font:800 30px 'cairo',sans-serif;}
