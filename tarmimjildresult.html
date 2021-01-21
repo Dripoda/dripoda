@@ -1,0 +1,30 @@
+<div id="post"> </div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>  <script> var firebaseConfig = {  apiKey: "AIzaSyDnYkq0QGCb7o9XKVGoKhP6wqscsnsfBWg",   authDomain: "test1-bc9e6.firebaseapp.com",   databaseURL: "https://test1-bc9e6-default-rtdb.firebaseio.com",   projectId: "test1-bc9e6",   storageBucket: "test1-bc9e6.appspot.com",   messagingSenderId: "957083311544",   appId: "1:957083311544:web:17a48631a18dfa51e4434d"    };   firebase.initializeApp(firebaseConfig);  </script>
+<script>
+function delete_post(key){    
+firebase.database().ref('users/'+key).remove();   getdata(); 
+}
+
+
+window.onload=function(){   this.getdata();}  
+function getdata(){
+firebase.database().ref('users').once('value').then(function(snapshot){
+document.getElementById('post').innerHTML="";
+var data=snapshot.val();
+for( let[key,value] of Object.entries(data) ){
+     document.getElementById('post').innerHTML += 
+     "<div>" +   
+     "<a style='color:red; font:800 15px sans-serif;'> id :</a> "      +  "<a style='color:green; font:800 15px sans-serif;'>" + key        + "</a>" +                          	                        
+     "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "      +  "<a style='color:green; font:800 15px sans-serif;'>" + value.ip   + "</a>" +
+     "<a style='color:red; font:800 15px sans-serif;'> name :</a>  "   +  "<a style='color:green; font:800 15px sans-serif;'>" + value.name + "</a>" +
+     "<a style='color:red; font:800 15px sans-serif;'> phone :</a> "     +  "<a style='color:green; font:800 15px sans-serif;'>" + value.phone  + "</a>" +
+	 "<a style='color:red; font:800 15px sans-serif;'> adress :</a> "     +  "<a style='color:green; font:800 15px sans-serif;'>" + value.adress  + "</a>" +
+     "<button type='submit' id='"+key+"'  onclick='delete_post(this.id)'  >Remove</button>" +	
+     "</div>"    
+}
+});
+}
+</script>
