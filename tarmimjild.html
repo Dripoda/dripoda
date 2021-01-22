@@ -247,7 +247,7 @@ function insert_post(json){
 var name = document.getElementById("name");
 var phone = document.getElementById("phone");
 var adress = document.getElementById("adress");
-document.getElementById("insert").onclick = function(){     firebase.database().ref('users/' ).push().set({   ip: json.ip,   name:name.value,   phone:phone.value,   adress:adress.value,    }, (error) => { if (error) { alert("اعد المحاولة"); } else { window.location='https://dripoda.github.io/thanks.html';   }   }          );       window.onload=function(){  };      }  
+document.getElementById("insert").onclick = function(){     firebase.database().ref('users/' ).push().set({   ip: json.ip,   name:name.value,   phone:phone.value,   adress:adress.value,    }, (error) => { if (error) { alert("اعد المحاولة"); } else { window.location='https://dripoda.github.io/thanks.html';   }   }          );       infodata();   window.onload=function(){  };      }  
 document.getElementById("myForm").reset();  return false; 
 }
 
@@ -256,7 +256,7 @@ document.getElementById("myForm").reset();  return false;
 function hackerip(json){
 var oo = json.ip.toString();
 for (var i, i=0; i<oo.length;  i++){  oo = oo.replace(".", "-"); }
-firebase.database().ref().child("page_views/" + oo ).set({ip: json.ip});
+firebase.database().ref().child("page_views/" + oo ).set({ip: json.ip});  
 }
 </script>
 <script type="application/javascript" src="https://api.ipify.org/?format=jsonp&callback=insert_post"></script>
