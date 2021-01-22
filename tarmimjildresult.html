@@ -15,57 +15,46 @@
 
 
 
-function ipdata(){
-firebase.database().ref("page_views").once("value", function(snapshot){ 
-
-    document.getElementById("numip").innerHTML = "<i class='fa fa-eye'></i>" + snapshot.numChildren();  
-    
-	document.getElementById("ip").innerHTML = ""; var data=snapshot.val();   for( let[key,value] of Object.entries(data) ){  document.getElementById('ip').innerHTML += 	 	  "<div>" +   "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +        value.ip         + "</a>" + 	  	  "</div>"  	 	}
-	
-});
-}
-
-
-
-
-
-function infodata(){ 
-firebase.database().ref('users').once('value', function(snapshot){  
-   
-    document.getElementById("numinfo").innerHTML = "<i class='fas fa-shopping-cart'></i>" + snapshot.numChildren();  
-	
-    document.getElementById('info').innerHTML="";     var data=snapshot.val();  for( let[key,value] of Object.entries(data) ){  document.getElementById('info').innerHTML += 
-       "<div>" +   
-       "<a style='color:red; font:800 15px sans-serif;'> id :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    key            + "</a>" +                          	                        
-       "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.ip       + "</a>" +
-       "<a style='color:red; font:800 15px sans-serif;'> name :</a>  "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.name     + "</a>" +
-       "<a style='color:red; font:800 15px sans-serif;'> phone :</a> "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.phone    + "</a>" +
-	   "<a style='color:red; font:800 15px sans-serif;'> adress :</a> "     +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.adress   + "</a>" +
-       "<button type='submit' id='"+key+"'  onclick='delete_post(this.id)'  >Remove</button>" +	
-       "</div>"    
-    }
-	
-}); 
-}
  
-function delete_post(key){    
-firebase.database().ref('users/'+key).remove();   
-infodata(); 
+function ipdata(){
+
+ firebase.database().ref("page_views").once("value", function(snapshot){ 
+
+      document.getElementById("numip").innerHTML = "<i class='fa fa-eye'></i>" + snapshot.numChildren();  
+    
+	  document.getElementById("ip").innerHTML = ""; var data=snapshot.val();   for( let[key,value] of Object.entries(data) ){  document.getElementById('ip').innerHTML += 	 	  
+	     "<div>" +   
+	     "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +           "<a href="+"https://toolsip.org/Ip/"+value.ip+">"+value.ip+"</a>"            + "</a>" + 	  	  
+         "</div>" ;  	
+	   };  	
+    });  ipdata();         
 }
 
 
 
-window.onload=function(){   this.infodata();  this.ipdata();   } 
+   
+function infodata(){ 
+
+  firebase.database().ref('users').once('value', function(snapshot){  
+ 
+      document.getElementById("numinfo").innerHTML = "<i class='fas fa-shopping-cart'></i>" + snapshot.numChildren();  
+	  
+      document.getElementById('info').innerHTML="";     var data=snapshot.val();  for( let[key,value] of Object.entries(data) ){  document.getElementById('info').innerHTML += 
+          "<div>" +   
+          "<a style='color:red; font:800 15px sans-serif;'> id :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    key            + "</a>" +                          	                        
+          "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.ip       + "</a>" +
+          "<a style='color:red; font:800 15px sans-serif;'> name :</a>  "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.name     + "</a>" +
+          "<a style='color:red; font:800 15px sans-serif;'> phone :</a> "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.phone    + "</a>" +
+	      "<a style='color:red; font:800 15px sans-serif;'> adress :</a> "     +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.adress   + "</a>" +
+         "</div>" ;   	   
+      };  infodata(); 	
+  }); 
+}
+
+window.onload=this.infodata();  
+
+window.onload=this.ipdata();
 
 
 </script>
-
-<!-- 
-
-
-  
-	
-
-
--->
 
