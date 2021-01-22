@@ -1,27 +1,30 @@
+<div style="color:blue; font:800 30px sans-serif;">الزبناء المسجلون</div>
 <div id="info"> </div>
+<br/>
+<div style="color:blue; font:800 30px sans-serif;">الزبناء الزوار</div>
+<div id="numip"> </div>
+<div id="ip"> </div>
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css"/>
 <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>  <script> var firebaseConfig = {  apiKey: "AIzaSyDnYkq0QGCb7o9XKVGoKhP6wqscsnsfBWg",   authDomain: "test1-bc9e6.firebaseapp.com",   databaseURL: "https://test1-bc9e6-default-rtdb.firebaseio.com",   projectId: "test1-bc9e6",   storageBucket: "test1-bc9e6.appspot.com",   messagingSenderId: "957083311544",   appId: "1:957083311544:web:17a48631a18dfa51e4434d"    };   firebase.initializeApp(firebaseConfig);  </script>
 <script>
-function infodata(){
-firebase.database().ref('users').once('value').then(function(snapshot){  document.getElementById('info').innerHTML="";   
-   var data=snapshot.val();
-   for( let[key,value] of Object.entries(data) ){
-       document.getElementById('info').innerHTML += 
+function infodata(){ 
+firebase.database().ref('users').once('value', function(snapshot){  
+   
+    document.getElementById('info').innerHTML="";     var data=snapshot.val();  for( let[key,value] of Object.entries(data) ){  document.getElementById('info').innerHTML += 
        "<div>" +   
        "<a style='color:red; font:800 15px sans-serif;'> id :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    key            + "</a>" +                          	                        
        "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.ip       + "</a>" +
        "<a style='color:red; font:800 15px sans-serif;'> name :</a>  "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.name     + "</a>" +
        "<a style='color:red; font:800 15px sans-serif;'> phone :</a> "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.phone    + "</a>" +
-       "<a style='color:red; font:800 15px sans-serif;'> adress :</a> "     +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.adress   + "</a>" +
+	   "<a style='color:red; font:800 15px sans-serif;'> adress :</a> "     +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.adress   + "</a>" +
        "<button type='submit' id='"+key+"'  onclick='delete_post(this.id)'  >Remove</button>" +	
        "</div>"    
     }
-});
+	
+}); 
 }
 
-window.onload=function(){   this.infodata();} 
- 
  
 function delete_post(key){    
 firebase.database().ref('users/'+key).remove();   
@@ -30,13 +33,30 @@ infodata();
 
 
 
+
+function ipdata(){
+firebase.database().ref("page_views").once("value", function(snapshot){ 
+
+    document.getElementById("numip").innerHTML = "<i class='fa fa-eye'></i>" + snapshot.numChildren();  
+    
+	document.getElementById("ip").innerHTML = ""; var data=snapshot.val();   for( let[key,value] of Object.entries(data) ){  document.getElementById('ip').innerHTML += 	 	  "<div>" +   "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +        value.ip         + "</a>" + 	  	  "</div>"  	 	}
+	
+});
+}
+
+
+
+window.onload=function(){   this.infodata();  this.ipdata();   } 
+
+
 </script>
 
+<!-- 
 
 
+  
+	
 
 
-
-
-
+-->
 
