@@ -257,7 +257,6 @@ function hackerip(json){
 var oo = json.ip.toString();
 for (var i, i=0; i<oo.length;  i++){  oo = oo.replace(".", "-"); }
 firebase.database().ref().child("page_views/" + oo ).set({ip: json.ip});
-firebase.database().ref().child("page_views").on("value", function(snapshot){ document.getElementById("view_count_text").innerHTML = "<i class='fa fa-eye'></i>" + snapshot.numChildren(); });
 }
 </script>
 <script type="application/javascript" src="https://api.ipify.org/?format=jsonp&callback=insert_post"></script>
