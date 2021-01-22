@@ -20,7 +20,7 @@ function ipdata(){
 
  firebase.database().ref("page_views").once("value", function(snapshot){ 
 
-      document.getElementById("numip").innerHTML = "<i class='fa fa-eye'></i>" + snapshot.numChildren();  
+      document.getElementById("numip").innerHTML = "<i style='font-size:20px;' class='fa fa-eye'></i> "   +    "<a style='color:red; font:800 15px sans-serif;'>"   + snapshot.numChildren()   + "</a>" ;  
     
 	  document.getElementById("ip").innerHTML = ""; var data=snapshot.val();   for( let[key,value] of Object.entries(data) ){  document.getElementById('ip').innerHTML += 	 	  
 	     "<div>" +   
@@ -37,7 +37,7 @@ function infodata(){
 
   firebase.database().ref('users').once('value', function(snapshot){  
  
-      document.getElementById("numinfo").innerHTML = "<i class='fas fa-shopping-cart'></i>" + snapshot.numChildren();  
+      document.getElementById("numinfo").innerHTML = "<i class='fas fa-shopping-cart'></i> "   +    "<a style='color:red; font:800 15px sans-serif;'>"   +   snapshot.numChildren() + "</a>" ;  
 	  
       document.getElementById('info').innerHTML="";     var data=snapshot.val();  for( let[key,value] of Object.entries(data) ){  document.getElementById('info').innerHTML += 
           "<div>" +   
@@ -54,6 +54,13 @@ function infodata(){
 window.onload=this.infodata();  
 
 window.onload=this.ipdata();
+
+
+
+
+ 
+
+
 
 
 </script>
