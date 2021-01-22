@@ -40,8 +40,7 @@ function infodata(){
       document.getElementById("numinfo").innerHTML = "<i class='fas fa-shopping-cart'></i> "   +    "<a style='color:red; font:800 15px sans-serif;'>"   +   snapshot.numChildren() + "</a>" ;  
 	  
       document.getElementById('info').innerHTML="";     var data=snapshot.val();  for( let[key,value] of Object.entries(data) ){  document.getElementById('info').innerHTML += 
-          "<div>" +   
-          "<a style='color:red; font:800 15px sans-serif;'> id :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    key            + "</a>" +                          	                        
+          "<div>" +                           	                        
           "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "         +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.ip       + "</a>" +
           "<a style='color:red; font:800 15px sans-serif;'> name :</a>  "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.name     + "</a>" +
           "<a style='color:red; font:800 15px sans-serif;'> phone :</a> "      +    "<a style='color:green; font:800 15px sans-serif;'>"   +    value.phone    + "</a>" +
