@@ -28,3 +28,27 @@ for( let[key,value] of Object.entries(data) ){
 });
 }
 </script>
+
+
+
+
+
+
+
+<div id="ip"> </div>
+
+</script>
+window.onload=function(){   this.getdata();}  
+function getdata(){
+firebase.database().ref('page_views').once('value').then(function(snapshot){
+document.getElementById('ip').innerHTML="";
+var data=snapshot.val();
+for( let[key,value] of Object.entries(data) ){
+     document.getElementById('post').innerHTML += 
+     "<div>" +   
+     "<a style='color:red; font:800 15px sans-serif;'> ip :</a> "      +  "<a style='color:green; font:800 15px sans-serif;'>" + ip        + "</a>" +                          	                        
+     "</div>"    
+}
+});
+}
+</script>
