@@ -37,7 +37,7 @@ for( let[key,value] of Object.entries(data) ){
 
 <div id="ip"> </div>
 
-</script>
+<script>
 window.onload=function(){   this.getdata();}  
 function getdata(){
 firebase.database().ref('page_views').once('value').then(function(snapshot){
