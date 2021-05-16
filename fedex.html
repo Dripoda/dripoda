@@ -31,8 +31,8 @@ html , body {}
 	    .container1 .col2{ background-color:transparent; width:50%; padding:2% 2%;      display:flex; align-items:center; justify-content:flex-end; grid-column-gap:1.2rem;    }
            .container1 .col2 span{ color:#dbd6ed; font:800 14px 'cairo'; text-transform: uppercase; cursor:pointer;}
 		   .container1 .col2 span:hover{color:white;}
-		   .container1 .col2 span.active{ padding: 0.5rem 18px;   border:solid 2px white; border-radius:20px;     color:white; font:700 14px 'cairo'; cursor:pointer;    text-align:center; }
-           .container1 .col2 span.active:hover {background-color:white; color:black;  transition:all 0.7s ease-in-out 0s;}
+		   .container1 .col2 span a.active{ padding: 0.5rem 18px;   border:solid 2px white; border-radius:20px;     color:white; font:700 14px 'cairo'; text-decoration:none; cursor:pointer;    text-align:center; }
+           .container1 .col2 span a.active:hover {background-color:white; color:black;  transition:all 0.7s ease-in-out 0s;}
 	    .container1 .col3{ background-color:transparent; width:50%; padding:2% 2%;      display:none; align-items:center; justify-content:flex-end; grid-column-gap:2rem;    }
 			.container1 .col3 a{color:white; font:700 30px 'cairo';}
 
@@ -45,7 +45,7 @@ html , body {}
             .container2 .col1 .list {display:grid; grid-row-gap:0.2rem;}
 			     .container2 .col1 .list span{color:white; font:500 15px "Roboto", "Helvetica", Arial, sans-serif;  }
 				 .container2 .col1 .list span i {padding-right: 0.4rem}
-			.container2 .col1 .btn{ padding: 0.5rem 18px; margin:10% 0%; border:solid 2px white; border-radius:20px;     color:white; font:700 14px 'cairo'; text-transform: uppercase;   cursor:pointer;       display: inline-block; text-align:center; }
+			.container2 .col1 .btn{ padding: 0.5rem 18px; margin:10% 0%; border:solid 2px white; border-radius:20px;     color:white; font:700 14px 'cairo'; text-transform: uppercase; text-decoration:none;  cursor:pointer;       display: inline-block; text-align:center; }
             .container2 .col1 .btn:hover {background-color:white; color:black;  transition:all 0.7s ease-in-out 0s;}
 
 	    .container2 .col2{ background-color:transparent; width:50%;      display:flex; align-items:flex-start; justify-content:flex-end; grid-column-gap:2rem;    }
@@ -100,7 +100,7 @@ html , body {}
 		   <img src="img/fedex/logo.png"/> <a>FeDEx App</a> 
 		</div>
 		<div class="col2">
-		   <span >Home</span>   <span>Features</span>   <span>Pricing</span>  <span class="active" >Télecharger l'application</span> </ul>
+		   <span >Home</span>   <span>Features</span>   <span>Pricing</span>  <span> <a class="active" href="https://www16.zippyshare.com/d/NwafAb2P/45641/app-debug.apk"> Télecharger l'application </a></span> </ul>
 		</div>
 		<div class="col3">
 		    <a>FeDEx App</a>
@@ -120,7 +120,7 @@ html , body {}
 			  <span> <i class="fa fa-check-circle pr-4" ></i>   Suivre les étapes d'installation </span>
 			  <span> <i class="fa fa-check-circle pr-4" ></i>   Suivez l'état de l'envoi et gérez vos colis </span>
 		   </div>
-		   <a class="btn" >Télecharger l'application FeDEx</a>
+		   <a class="btn" href="https://www16.zippyshare.com/d/NwafAb2P/45641/app-debug.apk">Télecharger l'application FeDEx</a>
 		</div>
 		<div class="col2">
 		   <img src="img/fedex/1.png"/>
