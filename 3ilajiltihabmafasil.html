@@ -1,0 +1,96 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" >
+<style>html, body{ padding:0; border:0; margin:0; }</style>
+<style>
+.row1{background-color:transparent; width:100%; height:auto; display:flex; align-items:center; justify-content:center; text-align:center;}
+.row1 .col1{background-color:transparent; width:20%; height:400px; display:flex; align-items:center; justify-content:flex-end; text-align:center; }
+.row1 .col2{background-color:transparent; width:25%; height:400px; display:flex; align-items:center; justify-content:flex-end; text-align:center; margin:0% 1% 0% 1%;}
+.row1 .col2 .posimg1{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;} .row1 .col2 .posimg1 .img1{max-width:100%; height:400px;}
+.row1 .col3{background-color:transparent; width:25%; height:400px; display:grid; align-items:center; justify-content:flex-start; text-align:center; margin:0% 1% 0% 1%; }
+.row1 .col3 .posimg1{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin::0% 5% 0% 5%;} .row1 .col3 .posimg1 .img1{max-width:100%; height:60px;}
+.row1 .col3 .postext1{background-color:#8fe046; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin:0% 5% 0% 5%;}   .row1 .col3 .postext1 .text1{color:black; font:800 27px 'Cairo', sans-serif;}
+.row1 .col3 .postext2{background-color:transparent; width:auto; height:auto; display:flex; align-items:center; justify-content:center; text-align:center; margin::0% 5% 0% 5%;}   .row1 .col3 .postext2 .text2{color:red; font:800 27px 'Cairo', sans-serif;}
+.row1 .col3 .posul1{background-color:transparent; width:auto; height:auto;  display:grid; align-items:center; justify-content:center; text-align:right; margin::0% 5% 0% 5%; direction: rtl;} .row1 .col3 .posul1 li{ color:black;  font: 800 27px 'Cairo', sans-serif;   list-style-type: none;  position: relative; }  .row1 .col3  .posul1 li .fa-li { color:green; position: absolute; top:0.6em; right: -1.6em;   }
+.row1 .col4{background-color:transparent; width:30%; height:400px; display:grid; align-items:center; justify-content:flex-start; text-align:center; }
+
+
+@media only screen and (max-width:1300px) { 
+.row1 .col1 {width:15%;height:400px;}         
+.row1 .col2 {width:30%; height:400px;} 
+.row1 .col2 .posimg1 .img1{height:400px;}                  
+.row1 .col3 {width:35%; height:400px;} 
+.row1 .col3 .posimg1 .img1{height:60px;} 
+.row1 .col3 .postext1 .text1{font:800 25px 'Cairo', sans-serif;} 
+.row1 .col3 .postext2 .text2{font:800 25px 'Cairo', sans-serif;} 
+.row1 .col3 .posul1 li{font: 800 25px 'Cairo', sans-serif;}                  
+.row1 .col4 {width:25%;  height:400px;}    
+}
+
+
+@media only screen and (max-width:1000px) { 
+.row1 .col1 {width:10%;height:400px;}                  
+.row1 .col2 {width:35%; height:400px;} 
+.row1 .col2 .posimg1 .img1{height:400px;}                  
+.row1 .col3 {width:35%; height:400px;} 
+.row1 .col3 .posimg1 .img1{height:60px;} 
+.row1 .col3 .postext1 .text1{font:800 23px 'Cairo', sans-serif;} 
+.row1 .col3 .postext2 .text2{font:800 23px 'Cairo', sans-serif;} 
+.row1 .col3  .posul1 li{font: 800 23px 'Cairo', sans-serif;}        
+.row1 .col4 {width:20%;  height:400px;}    
+}
+
+
+@media only screen and (max-width:600px)  { 
+.row1 .col1 {width:0%; height:300px;}                  
+.row1 .col2 {width:40%; height:300px;} 
+.row1 .col2 .posimg1 .img1{height:300px;}                  
+.row1 .col3 {width:50%; height:300px;} 
+.row1 .col3 .posimg1 .img1{height:50px;} 
+.row1 .col3 .postext1 .text1{font:800 20px 'Cairo', sans-serif;} 
+.row1 .col3 .postext2 .text2{font:800 20px 'Cairo', sans-serif;} 
+.row1 .col3  .posul1 li{font: 800 20px 'Cairo', sans-serif;}                  
+.row1 .col4 {width:10%;  height:300px;}    
+}
+
+
+@media only screen and (max-width:360px)  { 
+.row1 .col1 {width:0%; height:300px;}                  
+.row1 .col2 {width:40%; height:300px;} 
+.row1 .col2 .posimg1 .img1{height:300px;}                  
+.row1 .col3 {width:60%; height:300px;} 
+.row1 .col3 .posimg1 .img1{height:50px;} 
+.row1 .col3 .postext1 .text1{font:800 15px 'Cairo', sans-serif;} 
+.row1 .col3 .postext2 .text2{font:800 15px 'Cairo', sans-serif;} 
+.row1 .col3  .posul1 li{font: 800 15px 'Cairo', sans-serif;}                  
+.row1 .col4 {width:0%;   height:300px;}     
+}
+</style>
+
+
+
+<div class="row1">
+
+<div class="col1">
+</div>
+
+<div class="col2">
+ <div class="posimg1"><img class="img1" src="img/product.png"/></div>
+</div>
+
+<div class="col3">
+ <div class="posimg1"><img class="img1" src="img/birbio.png"/></div>
+ <div class="postext1"><div class="text1">العلاج رقم واحد للتخلص من إلتهاب المفاصل و آلام الروماتيزم</div></div>
+ <div class="postext2"><div class="text2">عرض محدود</div></div>
+ <div class="posul1">
+ <ul >
+   <li ><span class="fa-li"><i class="fas fa-check-square"></i></span> عبوة مجانية 2+1 </li>
+   <li ><span class="fa-li"><i class="fas fa-check-square"></i></span> توصيل مجاني</li>
+ </ul>
+ </div>
+</div>
+
+<div class="col4">
+</div>
+
+</div>
